@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Aki!</title>
+  </head>
+  <link href="../styles.css" rel="stylesheet" type="text/css" />
+  <body>
+    <p>
+      <button class="btn btn-primary size-L radius" id ="check_env">Check Env</button>
+      <script src = "../src/checkEnv.js"></script>
+    </p>
+    <p>
+      <label for="port">Port:</label>
+      <input type="text" id = "port_value" value=8080 id = "port" placeholder="8080" class="input-text radius size-M">
+    </p>
+    <p>
+      <div class="toggle toggle--push">
+        <input type="checkbox" id="toggle--push" class="toggle--checkbox">
+        <label class="toggle--btn" id = "start_button" for="toggle--push" value = off data-label-on="on" data-label-off="off"></label>
+      </div>
+      <script src = "../src/startServices.js"></script>
+    </p> 
+  </body>
+</html>    
