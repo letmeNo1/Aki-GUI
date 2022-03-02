@@ -15,6 +15,7 @@ startButton.addEventListener('click',()=>{
         child1.stdout.on("close",(data)=>{
             if(out1.includes(".jar")||out1.includes("App")){
                 alert("Already start!")
+                startButton.setAttribute("value","on");
             }else{
                 let child2 = exec(cmd2,{async:true});
                 child2.stdout.on("data",(data)=>{
@@ -48,8 +49,3 @@ startButton.addEventListener('click',()=>{
     }
 })
 
-        
-
-        // let  child = exec(cmd, {async:true});
-        // child.stdout.
-  
